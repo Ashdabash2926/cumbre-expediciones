@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Day Treks — Cumbre Expediciones</title>
+  <meta name="description" content="Explore multi-day trekking expeditions in the Cordillera Blanca and Huayhuash. From 2-day circuits to 12-day wilderness adventures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B4332', light: '#2D6A4F', dark: '#0F2B1F' },
+            alpine: { DEFAULT: '#E86F2C', light: '#F59E5E', dark: '#C65A1E' },
+            glacier: '#E8F0ED',
+            cream: '#FFFBF5',
+          },
+          fontFamily: {
+            heading: ['"Instrument Sans"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">Cumbre<span>.</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="treks.html" class="nav-link active">Treks</a>
+        <a href="day-hikes.html" class="nav-link">Day Hikes</a>
+        <a href="climbing.html" class="nav-link">Climbing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </div>
+      <div class="hidden md:block">
+        <a href="contact.html" class="btn btn-cta btn-sm">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="treks.html">Treks</a>
+    <a href="day-hikes.html">Day Hikes</a>
+    <a href="climbing.html">Climbing</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1528380998918-b8675df659f6?w=1920&q=80');">
+    <div class="page-hero-content">
+      <h1>Multi-Day Treks</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Treks</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section-sm">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-stone-600 text-lg leading-relaxed fade-up">
+        From the iconic Santa Cruz trail to the legendary Huayhuash Circuit, our multi-day treks take you deep into the Cordillera Blanca's most spectacular landscapes. All treks include certified guides, meals, camping equipment, and transport.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="pb-4">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <div class="filter-group" data-filter-key="duration" data-grid="#trek-grid">
+          <span class="font-heading font-600 text-sm text-stone-600 mr-2">Duration:</span>
+          <div class="filter-bar inline-flex">
+            <button class="filter-btn" data-value="short">2–4 Days</button>
+            <button class="filter-btn" data-value="medium">5–7 Days</button>
+            <button class="filter-btn" data-value="long">8+ Days</button>
+          </div>
+        </div>
+        <div class="filter-group" data-filter-key="difficulty" data-grid="#trek-grid">
+          <span class="font-heading font-600 text-sm text-stone-600 mr-2">Difficulty:</span>
+          <div class="filter-bar inline-flex">
+            <button class="filter-btn" data-value="moderate">Moderate</button>
+            <button class="filter-btn" data-value="challenging">Challenging</button>
+            <button class="filter-btn" data-value="expert">Expert</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trek Grid -->
+  <section class="section">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 card-grid" id="trek-grid">
+
+        <!-- Santa Cruz -->
+        <div class="card fade-up" data-duration="short" data-difficulty="moderate">
+          <img src="https://images.unsplash.com/photo-1505697594819-8a88ac9de632?w=800&q=80" alt="Laguna 69 beneath Chacraraju, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">4D / 3N</span>
+              <span class="card-badge difficulty-moderate">Moderate</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Santa Cruz Trek</h3>
+            <p class="text-stone-600 text-sm mb-4">The classic Cordillera Blanca circuit through turquoise lakes, the Punta Union pass (4,750m), and lush valleys.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$250</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>Day 1: Vaquería to Paria (3,850m) — gentle valley walk</li>
+                <li>Day 2: Paria to Taullipampa (4,250m) — Alpamayo views</li>
+                <li>Day 3: Punta Union Pass (4,750m) to Cashapampa</li>
+                <li>Day 4: Cashapampa to Huaraz (transfer)</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, cook, porters, all meals, camping gear, transport to/from trailhead, emergency radio.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Huayhuash Circuit -->
+        <div class="card fade-up fade-up-delay-1" data-duration="long" data-difficulty="challenging">
+          <img src="https://images.unsplash.com/photo-1528832095909-2f2436122ce6?w=800&q=80" alt="Mountain reflections in glacial lake, Huayhuash" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">10D / 9N</span>
+              <span class="card-badge difficulty-challenging">Challenging</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Huayhuash Circuit</h3>
+            <p class="text-stone-600 text-sm mb-4">One of the world's greatest treks. Remote wilderness, eight passes over 4,500m, and jaw-dropping scenery.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$650</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>10 days through Peru's most remote and dramatic mountain range</li>
+                <li>Eight passes above 4,500m including Cuyoc (5,000m)</li>
+                <li>Pristine glacial lakes: Carhuacocha, Jahuacocha, Gangrajanca</li>
+                <li>Views of Yerupajá (6,635m), Peru's second-highest peak</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, cook, donkey team, all meals, camping gear, transport, emergency satellite phone, medical oxygen.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpamayo Base Camp -->
+        <div class="card fade-up fade-up-delay-2" data-duration="medium" data-difficulty="challenging">
+          <img src="https://images.unsplash.com/photo-1719683564982-31d93ef55457?w=800&q=80" alt="Snow-capped peaks, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">7D / 6N</span>
+              <span class="card-badge difficulty-challenging">Challenging</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Alpamayo Base Camp</h3>
+            <p class="text-stone-600 text-sm mb-4">Trek to the base of the world's most beautiful mountain through stunning high-altitude landscapes and remote valleys.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$480</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>7 days through the northern Cordillera Blanca</li>
+                <li>Camp at the foot of Alpamayo's iconic ice pyramid</li>
+                <li>Cross two passes above 4,700m</li>
+                <li>Visit hidden lakes and traditional Quechua communities</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, cook, donkey team, all meals, camping gear, transport, emergency radio.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cedros-Alpamayo -->
+        <div class="card fade-up" data-duration="long" data-difficulty="expert">
+          <img src="https://images.unsplash.com/photo-1529498263248-2360a83f0e6c?w=800&q=80" alt="Aerial view of glacial lake, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">12D / 11N</span>
+              <span class="card-badge difficulty-expert">Expert</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Cedros–Alpamayo</h3>
+            <p class="text-stone-600 text-sm mb-4">The ultimate Cordillera Blanca traverse. Remote, demanding, and spectacularly rewarding for experienced trekkers.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$780</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>12-day expedition through the full northern Cordillera Blanca</li>
+                <li>Multiple high passes including Los Cedros (4,850m)</li>
+                <li>Alpamayo base camp and the rarely-visited Cedros valley</li>
+                <li>Total wilderness — no other trekkers for days</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Two certified guides, cook, donkey team, all meals, camping gear, transport, satellite phone, medical oxygen.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quilcayhuanca-Cojup -->
+        <div class="card fade-up fade-up-delay-1" data-duration="short" data-difficulty="moderate">
+          <img src="https://images.unsplash.com/photo-1547044770-89ab01ce15c9?w=800&q=80" alt="Laguna Parón, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">3D / 2N</span>
+              <span class="card-badge difficulty-moderate">Moderate</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Quilcayhuanca–Cojup</h3>
+            <p class="text-stone-600 text-sm mb-4">A perfect introduction to Andean trekking. Two stunning valleys connected by a high pass with panoramic glacier views.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$180</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>Day 1: Quilcayhuanca valley to Tullpacocha camp (4,250m)</li>
+                <li>Day 2: Cross pass (4,700m) and descend through Cojup valley</li>
+                <li>Day 3: Morning at Palcacocha lake, return to Huaraz</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, cook, all meals, camping gear, transport to/from trailhead.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Olleros to Chavin -->
+        <div class="card fade-up fade-up-delay-2" data-duration="short" data-difficulty="moderate">
+          <img src="https://images.unsplash.com/photo-1532996228489-082708ddbde0?w=800&q=80" alt="Mountain valley trail, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">3D / 2N</span>
+              <span class="card-badge difficulty-moderate">Moderate</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Olleros to Chavín</h3>
+            <p class="text-stone-600 text-sm mb-4">Follow an ancient pre-Inca trail across the Cordillera Blanca to the UNESCO World Heritage site of Chavín de Huántar.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$200</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>Day 1: Olleros village to Sacracancha camp (3,900m)</li>
+                <li>Day 2: Yanashallash Pass (4,700m), descend to Shongo</li>
+                <li>Day 3: Arrival at Chavín de Huántar archaeological site</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, cook, donkey team, all meals, camping gear, Chavín entrance fee, transport.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laguna Churup Circuit -->
+        <div class="card fade-up" data-duration="short" data-difficulty="moderate">
+          <img src="https://images.unsplash.com/photo-1589343869401-3e49f120e3d9?w=800&q=80" alt="Turquoise alpine lake, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">2D / 1N</span>
+              <span class="card-badge difficulty-moderate">Moderate</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Laguna Churup Circuit</h3>
+            <p class="text-stone-600 text-sm mb-4">An overnight trek to the stunning turquoise Churup lake with a wild camp beneath the glacier. Perfect for acclimatisation.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$120</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>Day 1: Trek to Laguna Churup (4,450m), camp beside the lake</li>
+                <li>Day 2: Sunrise at the lake, return descent to Huaraz</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, all meals, camping gear, transport to/from trailhead.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Huayhuash Mini -->
+        <div class="card fade-up fade-up-delay-1" data-duration="medium" data-difficulty="challenging">
+          <img src="https://images.unsplash.com/photo-1753623151363-484429b531ab?w=800&q=80" alt="Sunset over snow-capped peaks, Huayhuash" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">5D / 4N</span>
+              <span class="card-badge difficulty-challenging">Challenging</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Huayhuash Mini</h3>
+            <p class="text-stone-600 text-sm mb-4">Experience the highlights of the Huayhuash range in five days. The best lakes and passes without the full circuit commitment.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$380</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <button class="detail-toggle btn btn-secondary btn-sm w-full justify-center">View Details</button>
+          </div>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <h4 class="font-heading font-600 text-sm mb-2">Itinerary Highlights</h4>
+              <ul class="text-stone-600 text-sm space-y-1 mb-4">
+                <li>5 days covering the most scenic section of the Huayhuash</li>
+                <li>Camp at Carhuacocha and Jahuacocha — the range's finest lakes</li>
+                <li>Three passes above 4,500m</li>
+                <li>Views of Jirishanca, Yerupajá, and Siula Grande</li>
+              </ul>
+              <h4 class="font-heading font-600 text-sm mb-2">What's Included</h4>
+              <p class="text-stone-600 text-sm mb-4">Certified guide, cook, donkey team, all meals, camping gear, transport, emergency radio.</p>
+              <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Trek</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-heading font-800 text-3xl md:text-4xl tracking-tight mb-4 fade-up">Can't Decide?</h2>
+      <p class="text-white/70 text-lg mb-8 fade-up fade-up-delay-1">Tell us your dates, fitness level, and interests — we'll recommend the perfect trek for you.</p>
+      <a href="contact.html" class="btn btn-cta btn-lg fade-up fade-up-delay-2">Get a Recommendation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="nav-logo text-2xl block mb-4">Cumbre<span>.</span></a>
+          <p class="text-sm leading-relaxed">Expert-guided trekking and mountaineering adventures in the heart of the Cordillera Blanca, Huaraz, Peru.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Explore</h4>
+          <div class="flex flex-col gap-2">
+            <a href="treks.html" class="text-sm hover:text-white transition-colors">Multi-Day Treks</a>
+            <a href="day-hikes.html" class="text-sm hover:text-white transition-colors">Day Hikes</a>
+            <a href="climbing.html" class="text-sm hover:text-white transition-colors">Mountaineering</a>
+            <a href="gallery.html" class="text-sm hover:text-white transition-colors">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Company</h4>
+          <div class="flex flex-col gap-2">
+            <a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a>
+            <a href="about.html#team" class="text-sm hover:text-white transition-colors">Our Team</a>
+            <a href="contact.html#faq" class="text-sm hover:text-white transition-colors">FAQs</a>
+            <a href="contact.html" class="text-sm hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Get in Touch</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://wa.me/51987654321" class="hover:text-white transition-colors">+51 987 654 321</a>
+            <a href="mailto:info@cumbreexpediciones.com" class="hover:text-white transition-colors">info@cumbreexpediciones.com</a>
+            <p>Jr. Sucre 123, Huaraz, Ancash</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        <p>&copy; 2026 Cumbre Expediciones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

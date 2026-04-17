@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day Hikes & Tours — Cumbre Expediciones</title>
+  <meta name="description" content="Day hikes and tours from Huaraz to the Cordillera Blanca's most iconic lakes, glaciers, and viewpoints. No camping required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B4332', light: '#2D6A4F', dark: '#0F2B1F' },
+            alpine: { DEFAULT: '#E86F2C', light: '#F59E5E', dark: '#C65A1E' },
+            glacier: '#E8F0ED',
+            cream: '#FFFBF5',
+          },
+          fontFamily: {
+            heading: ['"Instrument Sans"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">Cumbre<span>.</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="treks.html" class="nav-link">Treks</a>
+        <a href="day-hikes.html" class="nav-link active">Day Hikes</a>
+        <a href="climbing.html" class="nav-link">Climbing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </div>
+      <div class="hidden md:block">
+        <a href="contact.html" class="btn btn-cta btn-sm">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="treks.html">Treks</a>
+    <a href="day-hikes.html">Day Hikes</a>
+    <a href="climbing.html">Climbing</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1518081125676-71b905e428b5?w=1920&q=80');">
+    <div class="page-hero-content">
+      <h1>Day Hikes & Tours</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Day Hikes</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section-sm">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-stone-600 text-lg leading-relaxed fade-up">
+        No camping required. Our day hikes and tours take you to the Cordillera Blanca's most iconic lakes, glaciers, and viewpoints — all in a single day from Huaraz.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hike Grid -->
+  <section class="section">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Lake 69 -->
+        <div class="card fade-up">
+          <img src="https://images.unsplash.com/photo-1505697594819-8a88ac9de632?w=800&q=80" alt="Laguna 69, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">6-7 Hours</span>
+              <span class="card-badge">4,600m</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Lake 69</h3>
+            <p class="text-stone-600 text-sm mb-4">The most famous hike in the Cordillera Blanca. Turquoise glacial lake beneath the towering Chacraraju massif.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$35</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book Hike</a>
+          </div>
+        </div>
+
+        <!-- Laguna Parón -->
+        <div class="card fade-up fade-up-delay-1">
+          <img src="https://images.unsplash.com/photo-1547044770-89ab01ce15c9?w=800&q=80" alt="Laguna Parón, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">5-6 Hours</span>
+              <span class="card-badge">4,185m</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Laguna Parón</h3>
+            <p class="text-stone-600 text-sm mb-4">The largest lake in the Cordillera Blanca, framed by the dramatic Artesonraju pyramid — the real Paramount mountain.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$40</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book Hike</a>
+          </div>
+        </div>
+
+        <!-- Pastoruri Glacier -->
+        <div class="card fade-up fade-up-delay-2">
+          <img src="https://images.unsplash.com/photo-1528380998918-b8675df659f6?w=800&q=80" alt="Pastoruri Glacier, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">5 Hours</span>
+              <span class="card-badge">5,000m</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Pastoruri Glacier</h3>
+            <p class="text-stone-600 text-sm mb-4">Walk on a tropical glacier at 5,000m. A powerful reminder of climate change and a truly surreal landscape.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$35</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book Hike</a>
+          </div>
+        </div>
+
+        <!-- Churup Lake -->
+        <div class="card fade-up">
+          <img src="https://images.unsplash.com/photo-1589343869401-3e49f120e3d9?w=800&q=80" alt="Churup Lake, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">6 Hours</span>
+              <span class="card-badge">4,450m</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Churup Lake</h3>
+            <p class="text-stone-600 text-sm mb-4">A challenging day hike with a scramble section rewarded by a stunning turquoise lake. Great for acclimatisation.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$30</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book Hike</a>
+          </div>
+        </div>
+
+        <!-- Laguna Wilcacocha -->
+        <div class="card fade-up fade-up-delay-1">
+          <img src="https://images.unsplash.com/photo-1532996228489-082708ddbde0?w=800&q=80" alt="Cordillera Blanca panorama from Wilcacocha" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">3 Hours</span>
+              <span class="card-badge">3,745m</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Laguna Wilcacocha</h3>
+            <p class="text-stone-600 text-sm mb-4">The perfect first hike in Huaraz. Easy trail with panoramic views of the entire Cordillera Blanca range.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$25</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book Hike</a>
+          </div>
+        </div>
+
+        <!-- Rajucolta Lake -->
+        <div class="card fade-up fade-up-delay-2">
+          <img src="https://images.unsplash.com/photo-1529498263248-2360a83f0e6c?w=800&q=80" alt="Rajucolta glacial lake, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">7 Hours</span>
+              <span class="card-badge">4,250m</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Rajucolta Lake</h3>
+            <p class="text-stone-600 text-sm mb-4">A hidden gem far from the crowds. Remote glacial lake surrounded by towering ice walls and pristine wilderness.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$40</span>
+              <span class="text-stone-600 text-xs">per person</span>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book Hike</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included / What to Bring -->
+  <section class="section section-alt">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="fade-up">
+          <h2 class="font-heading font-800 text-2xl md:text-3xl tracking-tight mb-6">What's Included</h2>
+          <ul class="space-y-3 text-stone-600">
+            <li class="flex items-start gap-3">
+              <span class="text-alpine font-bold text-lg leading-none mt-0.5">&#10003;</span>
+              <span>Return transport from Huaraz</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-alpine font-bold text-lg leading-none mt-0.5">&#10003;</span>
+              <span>Certified English-speaking guide</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-alpine font-bold text-lg leading-none mt-0.5">&#10003;</span>
+              <span>Park entrance fees</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-alpine font-bold text-lg leading-none mt-0.5">&#10003;</span>
+              <span>Snacks & hot drinks</span>
+            </li>
+          </ul>
+        </div>
+        <div class="fade-up fade-up-delay-1">
+          <h2 class="font-heading font-800 text-2xl md:text-3xl tracking-tight mb-6">What to Bring</h2>
+          <ul class="space-y-3 text-stone-600">
+            <li class="flex items-start gap-3">
+              <span class="text-forest font-bold text-lg leading-none mt-0.5">&#9679;</span>
+              <span>Hiking boots</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-forest font-bold text-lg leading-none mt-0.5">&#9679;</span>
+              <span>Warm layers</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-forest font-bold text-lg leading-none mt-0.5">&#9679;</span>
+              <span>Rain jacket</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-forest font-bold text-lg leading-none mt-0.5">&#9679;</span>
+              <span>Sun protection</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-forest font-bold text-lg leading-none mt-0.5">&#9679;</span>
+              <span>2L water</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-forest font-bold text-lg leading-none mt-0.5">&#9679;</span>
+              <span>Camera</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-dark text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-heading font-800 text-3xl md:text-4xl tracking-tight mb-4 fade-up">Want a Private Tour?</h2>
+      <p class="text-white/70 text-lg mb-8 fade-up fade-up-delay-1">We can arrange custom day trips for your group — choose your own destination, pace, and schedule.</p>
+      <a href="contact.html" class="btn btn-cta btn-lg fade-up fade-up-delay-2">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="nav-logo text-2xl block mb-4">Cumbre<span>.</span></a>
+          <p class="text-sm leading-relaxed">Expert-guided trekking and mountaineering adventures in the heart of the Cordillera Blanca, Huaraz, Peru.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Explore</h4>
+          <div class="flex flex-col gap-2">
+            <a href="treks.html" class="text-sm hover:text-white transition-colors">Multi-Day Treks</a>
+            <a href="day-hikes.html" class="text-sm hover:text-white transition-colors">Day Hikes</a>
+            <a href="climbing.html" class="text-sm hover:text-white transition-colors">Mountaineering</a>
+            <a href="gallery.html" class="text-sm hover:text-white transition-colors">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Company</h4>
+          <div class="flex flex-col gap-2">
+            <a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a>
+            <a href="about.html#team" class="text-sm hover:text-white transition-colors">Our Team</a>
+            <a href="contact.html#faq" class="text-sm hover:text-white transition-colors">FAQs</a>
+            <a href="contact.html" class="text-sm hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Get in Touch</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://wa.me/51987654321" class="hover:text-white transition-colors">+51 987 654 321</a>
+            <a href="mailto:info@cumbreexpediciones.com" class="hover:text-white transition-colors">info@cumbreexpediciones.com</a>
+            <p>Jr. Sucre 123, Huaraz, Ancash</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        <p>&copy; 2026 Cumbre Expediciones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

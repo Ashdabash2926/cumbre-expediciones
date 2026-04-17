@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumbre Expediciones — Trekking & Mountaineering in Huaraz, Peru</title>
+  <meta name="description" content="Expert-guided trekking, hiking, and mountaineering expeditions in the Cordillera Blanca and Huayhuash. Based in Huaraz, Peru.">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Cumbre Expediciones — Your Summit Starts Here">
+  <meta property="og:description" content="Expert-guided trekking and mountaineering in Huaraz, Peru. Cordillera Blanca & Huayhuash adventures.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B4332', light: '#2D6A4F', dark: '#0F2B1F' },
+            alpine: { DEFAULT: '#E86F2C', light: '#F59E5E', dark: '#C65A1E' },
+            glacier: '#E8F0ED',
+            cream: '#FFFBF5',
+          },
+          fontFamily: {
+            heading: ['"Instrument Sans"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">Cumbre<span>.</span></a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="treks.html" class="nav-link">Treks</a>
+        <a href="day-hikes.html" class="nav-link">Day Hikes</a>
+        <a href="climbing.html" class="nav-link">Climbing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </div>
+
+      <div class="hidden md:block">
+        <a href="contact.html" class="btn btn-cta btn-sm">Book Now</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="treks.html">Treks</a>
+    <a href="day-hikes.html">Day Hikes</a>
+    <a href="climbing.html">Climbing</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero Section — Cinematic -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1747171232839-a5fea879ca59?w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Content — Left-aligned for drama -->
+    <div class="hero-content ml-6 md:ml-16 lg:ml-24">
+      <div class="hero-eyebrow fade-up">Huaraz, Peru &mdash; 3,052m</div>
+      <h1 class="fade-up fade-up-delay-1">
+        Your<br>Summit<br><em>Starts Here</em>
+      </h1>
+      <p class="hero-subtitle fade-up fade-up-delay-2">
+        Expert-guided trekking and mountaineering through the Cordillera Blanca — the world's highest tropical mountain range.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 fade-up fade-up-delay-3">
+        <a href="treks.html" class="btn btn-cta btn-lg">Explore Treks</a>
+        <a href="contact.html" class="btn btn-ghost btn-lg">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Elevation data strip -->
+    <div class="hero-data-strip fade-up fade-up-delay-4">
+      <div class="hero-data-item">
+        <div class="value">6,768m</div>
+        <div class="label">Huascar&aacute;n</div>
+      </div>
+      <div class="hero-data-item">
+        <div class="value">5,947m</div>
+        <div class="label">Alpamayo</div>
+      </div>
+      <div class="hero-data-item">
+        <div class="value">4,750m</div>
+        <div class="label">Punta Uni&oacute;n</div>
+      </div>
+      <div class="hero-data-item hidden sm:block">
+        <div class="value">4,600m</div>
+        <div class="label">Laguna 69</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Text Banner -->
+  <div class="scroll-banner">
+    <div class="scroll-banner-track">
+      <span class="scroll-banner-item">Cordillera Blanca <span class="dot"></span></span>
+      <span class="scroll-banner-item">Huayhuash Circuit <span class="dot"></span></span>
+      <span class="scroll-banner-item">Santa Cruz Trek <span class="dot"></span></span>
+      <span class="scroll-banner-item">Laguna 69 <span class="dot"></span></span>
+      <span class="scroll-banner-item">Alpamayo 5,947m <span class="dot"></span></span>
+      <span class="scroll-banner-item">Huascar&aacute;n 6,768m <span class="dot"></span></span>
+      <span class="scroll-banner-item">Pastoruri Glacier <span class="dot"></span></span>
+      <span class="scroll-banner-item">Laguna Par&oacute;n <span class="dot"></span></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="scroll-banner-item">Cordillera Blanca <span class="dot"></span></span>
+      <span class="scroll-banner-item">Huayhuash Circuit <span class="dot"></span></span>
+      <span class="scroll-banner-item">Santa Cruz Trek <span class="dot"></span></span>
+      <span class="scroll-banner-item">Laguna 69 <span class="dot"></span></span>
+      <span class="scroll-banner-item">Alpamayo 5,947m <span class="dot"></span></span>
+      <span class="scroll-banner-item">Huascar&aacute;n 6,768m <span class="dot"></span></span>
+      <span class="scroll-banner-item">Pastoruri Glacier <span class="dot"></span></span>
+      <span class="scroll-banner-item">Laguna Par&oacute;n <span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 md:py-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="fade-up">
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="fade-up fade-up-delay-1">
+          <div class="stat-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Expeditions Led</div>
+        </div>
+        <div class="fade-up fade-up-delay-2">
+          <div class="stat-number" data-target="50" data-suffix="+">0</div>
+          <div class="stat-label">Routes Available</div>
+        </div>
+        <div class="fade-up fade-up-delay-3">
+          <div class="stat-number" data-target="4.9" data-prefix="">0</div>
+          <div class="stat-label">&#9733; TripAdvisor Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Treks -->
+  <section class="section">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14 fade-up">
+        <div class="flex justify-center mb-4">
+          <span class="section-label">Popular Adventures</span>
+        </div>
+        <h2 class="section-title">Featured Treks</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Santa Cruz — Laguna 69 area imagery -->
+        <div class="card fade-up">
+          <img src="https://images.unsplash.com/photo-1505697594819-8a88ac9de632?w=800&q=80" alt="Laguna 69 beneath Chacraraju, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">4 Days</span>
+              <span class="card-badge difficulty-moderate">Moderate</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Santa Cruz Trek</h3>
+            <p class="text-stone-600 text-sm mb-4">The classic Cordillera Blanca circuit through turquoise lakes, towering passes, and ancient valleys.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-heading font-700 text-xl text-forest">$250</span>
+              <a href="treks.html" class="font-heading font-600 text-sm text-alpine hover:text-alpine-dark transition-colors">View Trek &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Huayhuash — Pastoruri/mountain reflections -->
+        <div class="card fade-up fade-up-delay-1">
+          <img src="https://images.unsplash.com/photo-1528832095909-2f2436122ce6?w=800&q=80" alt="Mountain reflections in glacial lake, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">10 Days</span>
+              <span class="card-badge difficulty-challenging">Challenging</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Huayhuash Circuit</h3>
+            <p class="text-stone-600 text-sm mb-4">A world-renowned circuit through remote wilderness, dramatic passes, and pristine alpine lakes.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-heading font-700 text-xl text-forest">$650</span>
+              <a href="treks.html" class="font-heading font-600 text-sm text-alpine hover:text-alpine-dark transition-colors">View Trek &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpamayo — Cordillera Blanca peaks -->
+        <div class="card fade-up fade-up-delay-2">
+          <img src="https://images.unsplash.com/photo-1719683564982-31d93ef55457?w=800&q=80" alt="Snow-capped peaks of the Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex gap-2 mb-3">
+              <span class="card-badge">7 Days</span>
+              <span class="card-badge difficulty-challenging">Challenging</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Alpamayo Base Camp</h3>
+            <p class="text-stone-600 text-sm mb-4">Trek to the base of the world's most beautiful mountain through stunning high-altitude landscapes.</p>
+            <div class="flex items-center justify-between">
+              <span class="font-heading font-700 text-xl text-forest">$480</span>
+              <a href="treks.html" class="font-heading font-600 text-sm text-alpine hover:text-alpine-dark transition-colors">View Trek &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 fade-up">
+        <a href="treks.html" class="btn btn-secondary">View All Treks</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Cumbre -->
+  <section class="section section-alt">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14 fade-up">
+        <div class="flex justify-center mb-4">
+          <span class="section-label">Why Choose Us</span>
+        </div>
+        <h2 class="section-title">The Cumbre Difference</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Certified Guides -->
+        <div class="text-center fade-up">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-forest/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-700 text-xl mb-3">Certified UIAGM Guides</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">All our lead guides hold international UIAGM/IFMGA certification with extensive high-altitude experience in the Andes.</p>
+        </div>
+
+        <!-- Small Groups -->
+        <div class="text-center fade-up fade-up-delay-1">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-forest/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-700 text-xl mb-3">Small Groups Only</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Maximum 10 trekkers per group ensures personalised attention, better pace, and a more intimate mountain experience.</p>
+        </div>
+
+        <!-- Local Expertise -->
+        <div class="text-center fade-up fade-up-delay-2">
+          <div class="w-16 h-16 mx-auto mb-5 rounded-2xl bg-forest/10 flex items-center justify-center">
+            <svg class="w-8 h-8 text-forest" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-700 text-xl mb-3">Born in Huaraz</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">We're Huaracinos. These mountains are our home. We share hidden trails, local culture, and stories you won't find in guidebooks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14 fade-up">
+        <div class="flex justify-center mb-4">
+          <span class="section-label">What Trekkers Say</span>
+        </div>
+        <h2 class="section-title">Stories From the Trail</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-stone-600 text-sm leading-relaxed mb-5">"The Huayhuash Circuit with Cumbre was life-changing. Our guide Carlos knew every trail, every viewpoint, every hidden lake. The organisation was flawless from start to finish."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-glacier flex items-center justify-center font-heading font-700 text-forest text-sm">SK</div>
+            <div>
+              <p class="font-heading font-600 text-sm">Sarah K.</p>
+              <p class="text-stone-600 text-xs">United Kingdom</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up fade-up-delay-1">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-stone-600 text-sm leading-relaxed mb-5">"I've trekked in Nepal, Patagonia, and the Alps — the Cordillera Blanca with Cumbre is up there with the best. Professional, safe, and genuinely fun. Already planning our next trip."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-glacier flex items-center justify-center font-heading font-700 text-forest text-sm">MB</div>
+            <div>
+              <p class="font-heading font-600 text-sm">Marc B.</p>
+              <p class="text-stone-600 text-xs">Germany</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up fade-up-delay-2">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-stone-600 text-sm leading-relaxed mb-5">"We did the Lake 69 day hike and were so impressed we booked the Santa Cruz trek the next day. The food was amazing, the team was so welcoming, and the scenery was out of this world."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-glacier flex items-center justify-center font-heading font-700 text-forest text-sm">JL</div>
+            <div>
+              <p class="font-heading font-600 text-sm">Jessica L.</p>
+              <p class="text-stone-600 text-xs">United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner — Dramatic -->
+  <section class="cta-section">
+    <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1528380998918-b8675df659f6?w=1920&q=80');"></div>
+    <div class="cta-overlay"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <h2 class="font-heading font-800 text-white tracking-tight mb-5 fade-up" style="font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.03em;">
+        Ready for Your Adventure?
+      </h2>
+      <p class="text-white/70 text-lg mb-10 max-w-xl mx-auto fade-up fade-up-delay-1">
+        Whether it's a day hike to a glacial lake or a 10-day circuit through the Huayhuash, we'll make it unforgettable.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up fade-up-delay-2">
+        <a href="contact.html" class="btn btn-cta btn-lg">Get in Touch</a>
+        <a href="treks.html" class="btn btn-ghost btn-lg">Browse Treks</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <!-- Brand -->
+        <div>
+          <a href="index.html" class="nav-logo text-2xl block mb-4">Cumbre<span>.</span></a>
+          <p class="text-sm leading-relaxed">Expert-guided trekking and mountaineering adventures in the heart of the Cordillera Blanca, Huaraz, Peru.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Explore</h4>
+          <div class="flex flex-col gap-2">
+            <a href="treks.html" class="text-sm hover:text-white transition-colors">Multi-Day Treks</a>
+            <a href="day-hikes.html" class="text-sm hover:text-white transition-colors">Day Hikes</a>
+            <a href="climbing.html" class="text-sm hover:text-white transition-colors">Mountaineering</a>
+            <a href="gallery.html" class="text-sm hover:text-white transition-colors">Gallery</a>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Company</h4>
+          <div class="flex flex-col gap-2">
+            <a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a>
+            <a href="about.html#team" class="text-sm hover:text-white transition-colors">Our Team</a>
+            <a href="contact.html#faq" class="text-sm hover:text-white transition-colors">FAQs</a>
+            <a href="contact.html" class="text-sm hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Get in Touch</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://wa.me/51987654321" class="hover:text-white transition-colors flex items-center gap-2">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              +51 987 654 321
+            </a>
+            <a href="mailto:info@cumbreexpediciones.com" class="hover:text-white transition-colors flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+              info@cumbreexpediciones.com
+            </a>
+            <p class="flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+              Jr. Sucre 123, Huaraz, Ancash
+            </p>
+          </div>
+
+          <!-- Social -->
+          <div class="flex gap-4 mt-5">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-alpine transition-colors" aria-label="Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-alpine transition-colors" aria-label="Facebook">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-alpine transition-colors" aria-label="TripAdvisor">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 004.04 10.43 5.976 5.976 0 004.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 004.075 1.598 5.999 5.999 0 004.04-10.43l1.963-2.134h-4.361c-2.307-1.569-4.976-2.354-7.645-2.354h.012zm-4.003 4.29a3.997 3.997 0 110 7.995 3.997 3.997 0 010-7.996zm8.006 0a3.997 3.997 0 110 7.995 3.997 3.997 0 010-7.996zM8.003 10.59a1.998 1.998 0 100 3.997 1.998 1.998 0 000-3.997zm8.006 0a1.998 1.998 0 100 3.997 1.998 1.998 0 000-3.997z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        <p>&copy; 2026 Cumbre Expediciones. All rights reserved. &mdash; Huaraz, Ancash, Peru</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

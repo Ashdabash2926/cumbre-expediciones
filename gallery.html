@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Cumbre Expediciones</title>
+  <meta name="description" content="Browse photos from our treks, summit expeditions, and adventures across the Cordillera Blanca and Huayhuash ranges.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B4332', light: '#2D6A4F', dark: '#0F2B1F' },
+            alpine: { DEFAULT: '#E86F2C', light: '#F59E5E', dark: '#C65A1E' },
+            glacier: '#E8F0ED',
+            cream: '#FFFBF5',
+          },
+          fontFamily: {
+            heading: ['"Instrument Sans"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">Cumbre<span>.</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="treks.html" class="nav-link">Treks</a>
+        <a href="day-hikes.html" class="nav-link">Day Hikes</a>
+        <a href="climbing.html" class="nav-link">Climbing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+      </div>
+      <div class="hidden md:block">
+        <a href="contact.html" class="btn btn-cta btn-sm">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="treks.html">Treks</a>
+    <a href="day-hikes.html">Day Hikes</a>
+    <a href="climbing.html">Climbing</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1528255915607-9012fda0f838?w=1920&q=80');">
+    <div class="page-hero-content">
+      <h1>Gallery</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="section-sm">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="filter-group" data-filter-key="category" data-grid="#gallery-grid">
+        <div class="filter-bar">
+          <button class="filter-btn" data-value="treks">Treks</button>
+          <button class="filter-btn" data-value="summits">Summits</button>
+          <button class="filter-btn" data-value="landscapes">Landscapes</button>
+          <button class="filter-btn" data-value="people">People</button>
+        </div>
+      </div>
+      <p class="text-stone-400 text-sm mt-3">Click a category to filter, click again to show all.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="masonry-grid" id="gallery-grid">
+
+        <!-- 1 -->
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1505697594819-8a88ac9de632?w=800&q=80" alt="Laguna 69, Cordillera Blanca" data-caption="Laguna 69, Cordillera Blanca" loading="lazy">
+        </div>
+
+        <!-- 2 -->
+        <div class="gallery-item" data-category="treks">
+          <img src="https://images.unsplash.com/photo-1518081125676-71b905e428b5?w=800&q=80" alt="Trek to Laguna 69, Huaraz" data-caption="Trek to Laguna 69, Huaraz" loading="lazy">
+        </div>
+
+        <!-- 3 -->
+        <div class="gallery-item" data-category="people">
+          <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800&q=80" alt="Trekkers at Punta Union pass" data-caption="Trekkers at Punta Union pass" loading="lazy">
+        </div>
+
+        <!-- 4 -->
+        <div class="gallery-item" data-category="summits">
+          <img src="https://images.unsplash.com/photo-1719683564982-31d93ef55457?w=800&q=80" alt="Cordillera Blanca snow peaks" data-caption="Cordillera Blanca snow peaks" loading="lazy">
+        </div>
+
+        <!-- 5 -->
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1753623151363-484429b531ab?w=800&q=80" alt="Sunset over the Cordillera Blanca" data-caption="Sunset over the Cordillera Blanca" loading="lazy">
+        </div>
+
+        <!-- 6 -->
+        <div class="gallery-item" data-category="treks">
+          <img src="https://images.unsplash.com/photo-1528832095909-2f2436122ce6?w=800&q=80" alt="Reflections at Pastoruri" data-caption="Reflections at Pastoruri" loading="lazy">
+        </div>
+
+        <!-- 7 -->
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1547044770-89ab01ce15c9?w=800&q=80" alt="Laguna Parón, turquoise waters" data-caption="Laguna Parón, turquoise waters" loading="lazy">
+        </div>
+
+        <!-- 8 -->
+        <div class="gallery-item" data-category="summits">
+          <img src="https://images.unsplash.com/photo-1528380998918-b8675df659f6?w=800&q=80" alt="Nevado Pastoruri" data-caption="Nevado Pastoruri" loading="lazy">
+        </div>
+
+        <!-- 9 -->
+        <div class="gallery-item" data-category="summits">
+          <img src="https://images.unsplash.com/photo-1747171232839-a5fea879ca59?w=800&q=80" alt="Huascarán at sunrise" data-caption="Huascarán at sunrise" loading="lazy">
+        </div>
+
+        <!-- 10 -->
+        <div class="gallery-item" data-category="landscapes">
+          <img src="https://images.unsplash.com/photo-1532996228489-082708ddbde0?w=800&q=80" alt="Laguna Parón panorama" data-caption="Laguna Parón panorama" loading="lazy">
+        </div>
+
+        <!-- 11 -->
+        <div class="gallery-item" data-category="treks">
+          <img src="https://images.unsplash.com/photo-1529498263248-2360a83f0e6c?w=800&q=80" alt="Pastoruri glacier approach" data-caption="Pastoruri glacier approach" loading="lazy">
+        </div>
+
+        <!-- 12 -->
+        <div class="gallery-item" data-category="people">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Guide Carlos at base camp" data-caption="Guide Carlos at base camp" loading="lazy">
+        </div>
+
+        <!-- 13 -->
+        <div class="gallery-item" data-category="people">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Guide María on the Huayhuash" data-caption="Guide María on the Huayhuash" loading="lazy">
+        </div>
+
+        <!-- 14 -->
+        <div class="gallery-item" data-category="people">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Guide Diego on Alpamayo" data-caption="Guide Diego on Alpamayo" loading="lazy">
+        </div>
+
+        <!-- 15 -->
+        <div class="gallery-item" data-category="people">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Guide Ana Lucía identifying flora" data-caption="Guide Ana Lucía identifying flora" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="nav-logo text-2xl block mb-4">Cumbre<span>.</span></a>
+          <p class="text-sm leading-relaxed">Expert-guided trekking and mountaineering adventures in the heart of the Cordillera Blanca, Huaraz, Peru.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Explore</h4>
+          <div class="flex flex-col gap-2">
+            <a href="treks.html" class="text-sm hover:text-white transition-colors">Multi-Day Treks</a>
+            <a href="day-hikes.html" class="text-sm hover:text-white transition-colors">Day Hikes</a>
+            <a href="climbing.html" class="text-sm hover:text-white transition-colors">Mountaineering</a>
+            <a href="gallery.html" class="text-sm hover:text-white transition-colors">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Company</h4>
+          <div class="flex flex-col gap-2">
+            <a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a>
+            <a href="about.html#team" class="text-sm hover:text-white transition-colors">Our Team</a>
+            <a href="contact.html#faq" class="text-sm hover:text-white transition-colors">FAQs</a>
+            <a href="contact.html" class="text-sm hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Get in Touch</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://wa.me/51987654321" class="hover:text-white transition-colors">+51 987 654 321</a>
+            <a href="mailto:info@cumbreexpediciones.com" class="hover:text-white transition-colors">info@cumbreexpediciones.com</a>
+            <p>Jr. Sucre 123, Huaraz, Ancash</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        <p>&copy; 2026 Cumbre Expediciones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Cumbre Expediciones</title>
+  <meta name="description" content="Get in touch with Cumbre Expediciones. Send us an inquiry about treks, day hikes, climbing, or custom expeditions in the Cordillera Blanca.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B4332', light: '#2D6A4F', dark: '#0F2B1F' },
+            alpine: { DEFAULT: '#E86F2C', light: '#F59E5E', dark: '#C65A1E' },
+            glacier: '#E8F0ED',
+            cream: '#FFFBF5',
+          },
+          fontFamily: {
+            heading: ['"Instrument Sans"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">Cumbre<span>.</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="treks.html" class="nav-link">Treks</a>
+        <a href="day-hikes.html" class="nav-link">Day Hikes</a>
+        <a href="climbing.html" class="nav-link">Climbing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </div>
+      <div class="hidden md:block">
+        <a href="contact.html" class="btn btn-cta btn-sm">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="treks.html">Treks</a>
+    <a href="day-hikes.html">Day Hikes</a>
+    <a href="climbing.html">Climbing</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1752689053589-c39c72a6c33e?w=1920&q=80');">
+    <div class="page-hero-content">
+      <h1>Get in Touch</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-5 gap-12">
+
+        <!-- Left: Form (3 cols) -->
+        <div class="md:col-span-3">
+          <h2 class="font-heading font-700 text-2xl md:text-3xl tracking-tight mb-2 fade-up">Send Us an Inquiry</h2>
+          <p class="text-stone-600 mb-8 fade-up fade-up-delay-1">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+          <form id="contact-form" class="fade-up fade-up-delay-2">
+            <div class="form-group">
+              <label class="form-label" for="name">Name *</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+              <span class="form-error">This field is required</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email *</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+              <span class="form-error">Please enter a valid email</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="trip-interest">Trip Interest *</label>
+              <select id="trip-interest" name="trip-interest" class="form-select" required>
+                <option value="">Select an option...</option>
+                <option value="trek">Trek</option>
+                <option value="day-hike">Day Hike</option>
+                <option value="climbing">Climbing</option>
+                <option value="custom">Custom Expedition</option>
+                <option value="general">General Inquiry</option>
+              </select>
+              <span class="form-error">This field is required</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="dates">Preferred Dates</label>
+              <input type="text" id="dates" name="dates" class="form-input" placeholder="e.g. June 2026">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="group-size">Group Size</label>
+              <select id="group-size" name="group-size" class="form-select">
+                <option value="">Select...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3-4">3-4</option>
+                <option value="5-6">5-6</option>
+                <option value="7-10">7-10</option>
+                <option value="10+">10+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message *</label>
+              <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us about your dream adventure..."></textarea>
+              <span class="form-error">This field is required</span>
+            </div>
+
+            <button type="submit" class="btn btn-cta btn-lg w-full justify-center">Send Inquiry</button>
+          </form>
+
+          <div class="form-success mt-6">Thank you! We've received your inquiry and will get back to you within 24 hours.</div>
+        </div>
+
+        <!-- Right: Info (2 cols) -->
+        <div class="md:col-span-2 space-y-6 fade-up fade-up-delay-1">
+
+          <!-- WhatsApp -->
+          <div class="p-4 border border-stone-200 rounded-lg">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <div>
+                <h3 class="font-heading font-700 text-sm mb-1">WhatsApp</h3>
+                <a href="https://wa.me/51987654321" class="text-forest font-600 hover:text-forest-light transition-colors">+51 987 654 321</a>
+                <p class="text-stone-500 text-sm mt-0.5">(Fastest response)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="p-4 border border-stone-200 rounded-lg">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-forest flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+              </svg>
+              <div>
+                <h3 class="font-heading font-700 text-sm mb-1">Email</h3>
+                <a href="mailto:info@cumbreexpediciones.com" class="text-forest font-600 hover:text-forest-light transition-colors">info@cumbreexpediciones.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office -->
+          <div class="p-4 border border-stone-200 rounded-lg">
+            <div class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-forest flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+              </svg>
+              <div>
+                <h3 class="font-heading font-700 text-sm mb-1">Office</h3>
+                <p class="text-stone-600 text-sm">Jr. Sucre 123, Huaraz, Ancash, Peru</p>
+                <p class="text-stone-500 text-sm mt-0.5">Open Mon–Sat, 8am–6pm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="rounded-lg overflow-hidden border border-stone-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.123456789!2d-77.5289!3d-9.5277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHuaraz!5e0!3m2!1sen!2spe!4v1234567890"
+              width="100%"
+              height="250"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt" id="faq">
+    <div class="container-narrow">
+      <div class="text-center mb-12">
+        <h2 class="font-heading font-800 text-3xl md:text-4xl tracking-tight mb-3 fade-up">Frequently Asked Questions</h2>
+        <p class="text-stone-600 text-lg fade-up fade-up-delay-1">Everything you need to know before your trek.</p>
+      </div>
+
+      <div class="fade-up fade-up-delay-2">
+
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>When is the best time to trek?</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              The dry season from May to September offers the most reliable weather, with clear skies and minimal rain. June to August is peak season. April and October can be good with fewer crowds but occasional afternoon showers.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Do I need previous experience?</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              It depends on the trek. Day hikes and moderate treks like Santa Cruz are suitable for anyone with reasonable fitness. Challenging treks like the Huayhuash require strong hiking fitness. Mountaineering peaks require varying levels of technical experience — see our Climbing page for specifics.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What about altitude sickness?</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              Huaraz sits at 3,090m, so you're already acclimatising just by being here. We recommend arriving 2-3 days before your trek. We start with easier day hikes to build acclimatisation. All our guides carry medical oxygen and are trained in altitude illness recognition and response.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What's included in the price?</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              All trek prices include: certified bilingual guide, cook and camp assistants, all meals during the trek, camping equipment (tents, sleeping mats, dining tent), transport to and from trailheads, park entrance fees, and emergency communication equipment.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>How do I book and pay?</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              Send us an inquiry through this form or WhatsApp. We'll confirm availability and send a detailed itinerary. A 50% deposit secures your booking (via bank transfer or PayPal). The remaining 50% is due on arrival in Huaraz. Full refund if cancelled 14+ days before departure.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What should I bring?</span>
+            <span class="accordion-icon"></span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-content-inner">
+              We provide all technical and camping gear. You should bring: broken-in hiking boots, warm layers (fleece + down jacket), waterproof jacket, sun hat and sunscreen (SPF 50+), water bottles (2L minimum), headlamp, personal toiletries, and a small daypack. We send a detailed packing list after booking.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="nav-logo text-2xl block mb-4">Cumbre<span>.</span></a>
+          <p class="text-sm leading-relaxed">Expert-guided trekking and mountaineering adventures in the heart of the Cordillera Blanca, Huaraz, Peru.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Explore</h4>
+          <div class="flex flex-col gap-2">
+            <a href="treks.html" class="text-sm hover:text-white transition-colors">Multi-Day Treks</a>
+            <a href="day-hikes.html" class="text-sm hover:text-white transition-colors">Day Hikes</a>
+            <a href="climbing.html" class="text-sm hover:text-white transition-colors">Mountaineering</a>
+            <a href="gallery.html" class="text-sm hover:text-white transition-colors">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Company</h4>
+          <div class="flex flex-col gap-2">
+            <a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a>
+            <a href="about.html#team" class="text-sm hover:text-white transition-colors">Our Team</a>
+            <a href="contact.html#faq" class="text-sm hover:text-white transition-colors">FAQs</a>
+            <a href="contact.html" class="text-sm hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Get in Touch</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://wa.me/51987654321" class="hover:text-white transition-colors">+51 987 654 321</a>
+            <a href="mailto:info@cumbreexpediciones.com" class="hover:text-white transition-colors">info@cumbreexpediciones.com</a>
+            <p>Jr. Sucre 123, Huaraz, Ancash</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        <p>&copy; 2026 Cumbre Expediciones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

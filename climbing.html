@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountaineering & Climbing — Cumbre Expediciones</title>
+  <meta name="description" content="Guided mountaineering expeditions in the Cordillera Blanca. From beginner-friendly 5,000m peaks to technical 6,000m+ climbs with UIAGM-certified guides.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { DEFAULT: '#1B4332', light: '#2D6A4F', dark: '#0F2B1F' },
+            alpine: { DEFAULT: '#E86F2C', light: '#F59E5E', dark: '#C65A1E' },
+            glacier: '#E8F0ED',
+            cream: '#FFFBF5',
+          },
+          fontFamily: {
+            heading: ['"Instrument Sans"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="nav-logo">Cumbre<span>.</span></a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="treks.html" class="nav-link">Treks</a>
+        <a href="day-hikes.html" class="nav-link">Day Hikes</a>
+        <a href="climbing.html" class="nav-link active">Climbing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </div>
+      <div class="hidden md:block">
+        <a href="contact.html" class="btn btn-cta btn-sm">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="treks.html">Treks</a>
+    <a href="day-hikes.html">Day Hikes</a>
+    <a href="climbing.html">Climbing</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1747171232839-a5fea879ca59?w=1920&q=80');">
+    <div class="page-hero-content">
+      <h1>Mountaineering & Climbing</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Climbing</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section-sm">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-stone-600 text-lg leading-relaxed fade-up">
+        From beginner-friendly 5,000m peaks to technical 6,000m+ expeditions, our UIAGM-certified guides will get you to the summit safely.
+      </p>
+    </div>
+  </section>
+
+  <!-- Peak Cards -->
+  <section class="section">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Pisco West -->
+        <div class="card fade-up">
+          <img src="https://images.unsplash.com/photo-1719683564982-31d93ef55457?w=800&q=80" alt="Pisco West summit, Cordillera Blanca" class="card-image">
+          <div class="card-body">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="card-badge">5,752m</span>
+              <span class="card-badge difficulty-moderate">Grade PD</span>
+              <span class="card-badge">2 Days</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Pisco West</h3>
+            <p class="text-stone-600 text-sm mb-4">The most popular climbing peak in the Cordillera Blanca. Straightforward glacier route with incredible summit views of Huascarán and Chopicalqui.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$280</span>
+              <div class="mountain-rating" title="Difficulty: 3 out of 5">
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="empty" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="empty" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Climb</a>
+          </div>
+        </div>
+
+        <!-- Ishinca -->
+        <div class="card fade-up fade-up-delay-1">
+          <img src="https://images.unsplash.com/photo-1753623151363-484429b531ab?w=800&q=80" alt="Ishinca peak at sunset" class="card-image">
+          <div class="card-body">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="card-badge">5,530m</span>
+              <span class="card-badge difficulty-moderate">Grade F/PD</span>
+              <span class="card-badge">2 Days</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Ishinca</h3>
+            <p class="text-stone-600 text-sm mb-4">An ideal first high-altitude climb. Non-technical glacier route perfect for mountaineering beginners with good fitness.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$250</span>
+              <div class="mountain-rating" title="Difficulty: 2 out of 5">
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="empty" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="empty" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="empty" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Climb</a>
+          </div>
+        </div>
+
+        <!-- Huascarán -->
+        <div class="card fade-up">
+          <img src="https://images.unsplash.com/photo-1747171232839-a5fea879ca59?w=800&q=80" alt="Huascarán, Peru's highest peak" class="card-image">
+          <div class="card-body">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="card-badge">6,768m</span>
+              <span class="card-badge difficulty-challenging">Grade AD</span>
+              <span class="card-badge">4 Days</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Huascarán</h3>
+            <p class="text-stone-600 text-sm mb-4">Peru's highest peak and the highest tropical mountain on Earth. A serious expedition requiring prior mountaineering experience.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$650</span>
+              <div class="mountain-rating" title="Difficulty: 4 out of 5">
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="empty" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Climb</a>
+          </div>
+        </div>
+
+        <!-- Alpamayo -->
+        <div class="card fade-up fade-up-delay-1">
+          <img src="https://images.unsplash.com/photo-1752689053589-c39c72a6c33e?w=800&q=80" alt="Alpamayo summit pyramid" class="card-image">
+          <div class="card-body">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="card-badge">5,947m</span>
+              <span class="card-badge difficulty-expert">Grade D</span>
+              <span class="card-badge">6 Days</span>
+            </div>
+            <h3 class="font-heading font-700 text-xl mb-2">Alpamayo</h3>
+            <p class="text-stone-600 text-sm mb-4">Once voted the world's most beautiful mountain. Technical ice climbing on the famous Ferrari route — for experienced climbers only.</p>
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-heading font-700 text-xl text-forest">$850</span>
+              <div class="mountain-rating" title="Difficulty: 5 out of 5">
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+                <svg class="filled" viewBox="0 0 16 16" fill="currentColor"><polygon points="8,2 14,14 2,14"/></svg>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-cta btn-sm w-full justify-center">Book This Climb</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirements -->
+  <section class="section section-alt">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-heading font-800 text-3xl md:text-4xl tracking-tight text-center mb-12 fade-up">Before You Climb</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Fitness Level -->
+        <div class="fade-up">
+          <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-alpine" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-700 text-lg mb-3">Fitness Level</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">All climbs require good cardiovascular fitness. You should be comfortable hiking 6-8 hours with a heavy pack. For peaks above 6,000m, prior altitude experience is essential.</p>
+        </div>
+
+        <!-- Experience Required -->
+        <div class="fade-up fade-up-delay-1">
+          <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-alpine" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-700 text-lg mb-3">Experience Required</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Ishinca and Pisco are suitable for fit beginners with no climbing experience. Huascarán requires prior glacier experience. Alpamayo requires technical ice climbing skills.</p>
+        </div>
+
+        <!-- Essential Gear -->
+        <div class="fade-up fade-up-delay-2">
+          <div class="mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-alpine" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-700 text-lg mb-3">Essential Gear</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">We provide technical climbing gear (ropes, harnesses, crampons, ice axes). You bring: mountaineering boots (B2/B3), warm layers, down jacket, sleeping bag (-15°C), headlamp, sun protection.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Expedition CTA -->
+  <section class="section section-dark text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="font-heading font-800 text-3xl md:text-4xl tracking-tight mb-4 fade-up">Planning Something Bigger?</h2>
+      <p class="text-white/70 text-lg mb-8 fade-up fade-up-delay-1">We design custom expeditions to any peak in the Cordillera Blanca and Cordillera Huayhuash. Tell us your objective and experience level — we'll build the itinerary.</p>
+      <a href="contact.html" class="btn btn-cta btn-lg fade-up fade-up-delay-2">Design Your Expedition</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html" class="nav-logo text-2xl block mb-4">Cumbre<span>.</span></a>
+          <p class="text-sm leading-relaxed">Expert-guided trekking and mountaineering adventures in the heart of the Cordillera Blanca, Huaraz, Peru.</p>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Explore</h4>
+          <div class="flex flex-col gap-2">
+            <a href="treks.html" class="text-sm hover:text-white transition-colors">Multi-Day Treks</a>
+            <a href="day-hikes.html" class="text-sm hover:text-white transition-colors">Day Hikes</a>
+            <a href="climbing.html" class="text-sm hover:text-white transition-colors">Mountaineering</a>
+            <a href="gallery.html" class="text-sm hover:text-white transition-colors">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Company</h4>
+          <div class="flex flex-col gap-2">
+            <a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a>
+            <a href="about.html#team" class="text-sm hover:text-white transition-colors">Our Team</a>
+            <a href="contact.html#faq" class="text-sm hover:text-white transition-colors">FAQs</a>
+            <a href="contact.html" class="text-sm hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-700 text-white text-sm tracking-wide uppercase mb-4">Get in Touch</h4>
+          <div class="flex flex-col gap-3 text-sm">
+            <a href="https://wa.me/51987654321" class="hover:text-white transition-colors">+51 987 654 321</a>
+            <a href="mailto:info@cumbreexpediciones.com" class="hover:text-white transition-colors">info@cumbreexpediciones.com</a>
+            <p>Jr. Sucre 123, Huaraz, Ancash</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-center text-xs text-white/40">
+        <p>&copy; 2026 Cumbre Expediciones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
